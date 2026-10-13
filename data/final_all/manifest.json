@@ -1,0 +1,162 @@
+{
+  "config": {
+    "pairs_dir": "/home/claude/sml-project/data/processed",
+    "out": "data/final_all",
+    "seed": 42,
+    "min_coder_rating": 4,
+    "min_gap": 2,
+    "revision_share": 0.3,
+    "max_drafts_per_task": 2,
+    "max_seq_tokens": 4096,
+    "judge_max_rating_share": null,
+    "language": null
+  },
+  "splits_json_sha256": "8353a50bc80603cb083fcee31899a4a9aba88d9502defd40e52ca27de759cf69",
+  "sets": {
+    "coder_train": {
+      "examples": 9707,
+      "tasks": 6796,
+      "kinds": {
+        "fresh": 6796,
+        "revision": 2911
+      },
+      "est_tokens_p50_p95_max": [
+        943,
+        2049,
+        4022
+      ]
+    },
+    "judge_train": {
+      "examples": 27834,
+      "tasks": 6984,
+      "kinds": {
+        "judge": 27834
+      },
+      "ratings": {
+        "1": 1348,
+        "2": 5092,
+        "3": 9269,
+        "4": 9342,
+        "5": 2783
+      },
+      "est_tokens_p50_p95_max": [
+        921,
+        1646,
+        4085
+      ]
+    },
+    "selfcritique_train": {
+      "examples": 8195,
+      "tasks": 5730,
+      "kinds": {
+        "self_critique": 8195
+      },
+      "est_tokens_p50_p95_max": [
+        1430,
+        2530,
+        4056
+      ]
+    },
+    "coder_val": {
+      "examples": 2083,
+      "tasks": 1457,
+      "kinds": {
+        "fresh": 1457,
+        "revision": 626
+      },
+      "est_tokens_p50_p95_max": [
+        947,
+        2016,
+        3828
+      ]
+    },
+    "judge_val": {
+      "examples": 5963,
+      "tasks": 1498,
+      "kinds": {
+        "judge": 5963
+      },
+      "ratings": {
+        "1": 294,
+        "2": 1107,
+        "3": 1948,
+        "4": 2005,
+        "5": 609
+      },
+      "est_tokens_p50_p95_max": [
+        921,
+        1618,
+        3934
+      ]
+    },
+    "selfcritique_val": {
+      "examples": 1790,
+      "tasks": 1231,
+      "kinds": {
+        "self_critique": 1790
+      },
+      "est_tokens_p50_p95_max": [
+        1431,
+        2481,
+        3744
+      ]
+    },
+    "coder_test": {
+      "examples": 2075,
+      "tasks": 1452,
+      "kinds": {
+        "fresh": 1452,
+        "revision": 623
+      },
+      "est_tokens_p50_p95_max": [
+        944,
+        2080,
+        3952
+      ]
+    },
+    "judge_test": {
+      "examples": 5965,
+      "tasks": 1497,
+      "kinds": {
+        "judge": 5965
+      },
+      "ratings": {
+        "1": 308,
+        "2": 1128,
+        "3": 1969,
+        "4": 2010,
+        "5": 550
+      },
+      "est_tokens_p50_p95_max": [
+        924,
+        1658,
+        3988
+      ]
+    },
+    "selfcritique_test": {
+      "examples": 1778,
+      "tasks": 1237,
+      "kinds": {
+        "self_critique": 1778
+      },
+      "est_tokens_p50_p95_max": [
+        1446,
+        2541,
+        3881
+      ]
+    }
+  },
+  "dropped_over_max_tokens": {
+    "coder_train": 22,
+    "judge_train": 47,
+    "selfcritique_train": 17,
+    "coder_val": 3,
+    "judge_val": 10,
+    "selfcritique_val": 5,
+    "coder_test": 2,
+    "judge_test": 10,
+    "selfcritique_test": 1
+  },
+  "judge_train_rebalanced_counts": null,
+  "note": "Coder revision examples and setup 2 examples use the same draft/critique material, so differences between setups come from the architecture."
+}

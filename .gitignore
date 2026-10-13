@@ -1,0 +1,13 @@
+data/raw/
+data/processed/
+data/final_*/*.jsonl
+data/final_*/preview.md
+checkpoints/
+results/*/*_raw.jsonl
+results/*/*_samples*.jsonl
+results/*/*eval_results.json
+results/*/*_history.jsonl
+results/*_quick/
+results/*_log.txt
+__pycache__/
+*.pyc
